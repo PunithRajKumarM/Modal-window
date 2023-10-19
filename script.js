@@ -1,5 +1,4 @@
 "use strict";
-alert("Hii")
 let modal = document.querySelector(".modal");
 let showModal = document.querySelectorAll(".show-modal");
 let overlay = document.querySelector(".overlay");
