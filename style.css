@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(to right bottom, coral, lightcoral);
+  height: 100vh;
+}
+
+.buttons {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.show-modal {
+  border-color: tomato;
+  color: coral;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.show-modal:hover,
+.close:hover {
+  background-color: coral;
+  color: white;
+  border-color: white;
+}
+
+.modal {
+  position: absolute;
+  border: 2px solid white;
+  padding: 3rem 1rem;
+  width: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* background: linear-gradient(to right bottom, coral, lightcoral); */
+  background-color: coral;
+  color: white;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: large;
+  border-color: tomato;
+  color: coral;
+  background-color: white;
+  font-weight: 600;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2.5px);
+  z-index: 5;
+}
